@@ -4,7 +4,7 @@ WORKDIR /usr/src/app
 
 COPY . .
 
-RUN pip install --no-cache-dir fastapi uvicorn pandas scikit-learn
+RUN pip install --no-cache-dir fastapi uvicorn pandas scikit-learn xgboost mysql-connector-python
 
 EXPOSE 3005
 
