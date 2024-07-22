@@ -50,7 +50,7 @@ async def analize_sentiment(request: SentimentRequest = Body(...)):
     return {"data": {"sentiment": 1}}
 
 
-@app.get("/api/v1/sentiment/time_df")
+@app.post("/api/v1/sentiment/time_df")
 async def get_time_df(request: TimeDF = Body(...)):
     uuid = request.uuid
     mydb = mysql.connector.connect(
