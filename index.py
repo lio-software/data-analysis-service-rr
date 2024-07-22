@@ -9,8 +9,6 @@ import pandas as pd
 import os
 import mysql.connector
 from xgboost import XGBRegressor
-import matplotlib.pyplot as plt
-
 
 class SentimentRequest(BaseModel):
     text: str
